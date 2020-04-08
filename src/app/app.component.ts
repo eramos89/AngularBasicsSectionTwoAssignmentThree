@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'section-two-assignment-three';
+  showSecret = false;
+  log = [];
+
+  onToggle() {
+    this.showSecret = !this.showSecret;
+    this.log.push(this.log.length + 1);
+  }
 }
+
